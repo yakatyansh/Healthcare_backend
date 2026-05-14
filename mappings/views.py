@@ -1,9 +1,9 @@
 from rest_framework import viewsets
-from .models import Patient
+from .models import PatientDoctorMapping as Mappings
 from .serializers import PatientDoctorMappingSerializer
 
-class PatientViewSet(viewsets.ModelViewSet):
+class MappingViewSet(viewsets.ModelViewSet):
 
-    queryset = Patient.objects.all()
+    queryset = Mappings.objects.all()
 
     serializer_class = PatientDoctorMappingSerializer
