@@ -1,8 +1,8 @@
 from rest_framework.routers import DefaultRouter
-from .views import MappingViewSet
+from .views import  PatientDoctorMappingViewSet
 
 router = DefaultRouter()
 
-router.register(r'mappings', MappingViewSet)
+router.register(r'mappings', PatientDoctorMappingViewSet)
 
 urlpatterns = router.urls
